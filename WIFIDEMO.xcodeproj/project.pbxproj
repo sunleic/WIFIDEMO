@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2490ABB8F0AC6B4421C53323 /* libPods-WIFIDEMO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D105BB4A90E49C4A0425964 /* libPods-WIFIDEMO.a */; };
+		3683D978E172C09514A857F4 /* libPods-WIFIDEMOTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D247B27DBA7F45735DD7F101 /* libPods-WIFIDEMOTests.a */; };
+		715524522272A131001EBC9F /* WiFiProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 715524502272A130001EBC9F /* WiFiProxy.m */; };
+		719390CD2270086E00AA36BC /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 719390CC2270086E00AA36BC /* ExternalAccessory.framework */; };
+		719390CF22700B6F00AA36BC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 719390CE22700B6F00AA36BC /* CloudKit.framework */; };
+		719390D12270131900AA36BC /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 719390D02270131900AA36BC /* NetworkExtension.framework */; };
+		A6CEBBB35F5DF3F212190C1A /* libPods-WIFIDEMOUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF64DEF69816D86E5DD75B41 /* libPods-WIFIDEMOUITests.a */; };
+		E478C43B22680AFF001E0EAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E478C43A22680AFF001E0EAC /* AppDelegate.m */; };
+		E478C43E22680AFF001E0EAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E478C43D22680AFF001E0EAC /* ViewController.m */; };
+		E478C44122680AFF001E0EAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E478C43F22680AFF001E0EAC /* Main.storyboard */; };
+		E478C44322680B00001E0EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E478C44222680B00001E0EAC /* Assets.xcassets */; };
+		E478C44622680B00001E0EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E478C44422680B00001E0EAC /* LaunchScreen.storyboard */; };
+		E478C44922680B00001E0EAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E478C44822680B00001E0EAC /* main.m */; };
+		E478C45322680B00001E0EAC /* WIFIDEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E478C45222680B00001E0EAC /* WIFIDEMOTests.m */; };
+		E478C45E22680B00001E0EAC /* WIFIDEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E478C45D22680B00001E0EAC /* WIFIDEMOUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E478C44F22680B00001E0EAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E478C42E22680AFF001E0EAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E478C43522680AFF001E0EAC;
+			remoteInfo = WIFIDEMO;
+		};
+		E478C45A22680B00001E0EAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E478C42E22680AFF001E0EAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E478C43522680AFF001E0EAC;
+			remoteInfo = WIFIDEMO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F8A18FC885F0E0CFA36D536 /* Pods-WIFIDEMOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WIFIDEMOUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WIFIDEMOUITests/Pods-WIFIDEMOUITests.release.xcconfig"; sourceTree = "<group>"; };
+		134A4EB6FA1B03FE3803D309 /* Pods-WIFIDEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WIFIDEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-WIFIDEMO/Pods-WIFIDEMO.release.xcconfig"; sourceTree = "<group>"; };
+		26D8A1ED1F6D2273151C1EF8 /* Pods-WIFIDEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WIFIDEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WIFIDEMO/Pods-WIFIDEMO.debug.xcconfig"; sourceTree = "<group>"; };
+		376BC4F6751D5446DAF5028F /* Pods-WIFIDEMOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WIFIDEMOTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WIFIDEMOTests/Pods-WIFIDEMOTests.release.xcconfig"; sourceTree = "<group>"; };
+		70C66170D1C96D9333DCAE04 /* Pods-WIFIDEMOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WIFIDEMOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WIFIDEMOTests/Pods-WIFIDEMOTests.debug.xcconfig"; sourceTree = "<group>"; };
+		715524502272A130001EBC9F /* WiFiProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WiFiProxy.m; sourceTree = "<group>"; };
+		715524512272A131001EBC9F /* WiFiProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WiFiProxy.h; sourceTree = "<group>"; };
+		715524532272A249001EBC9F /* SCNetworkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNetworkHeader.h; sourceTree = "<group>"; };
+		717683F7226881C200F86D84 /* WIFIDEMO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WIFIDEMO.entitlements; sourceTree = "<group>"; };
+		719390CC2270086E00AA36BC /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		719390CE22700B6F00AA36BC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		719390D02270131900AA36BC /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		9D105BB4A90E49C4A0425964 /* libPods-WIFIDEMO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WIFIDEMO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F6F1BF452C20A0CDB5B0F91 /* Pods-WIFIDEMOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WIFIDEMOUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WIFIDEMOUITests/Pods-WIFIDEMOUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF64DEF69816D86E5DD75B41 /* libPods-WIFIDEMOUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WIFIDEMOUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D247B27DBA7F45735DD7F101 /* libPods-WIFIDEMOTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WIFIDEMOTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E478C43622680AFF001E0EAC /* WIFIDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WIFIDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E478C43922680AFF001E0EAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E478C43A22680AFF001E0EAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E478C43C22680AFF001E0EAC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E478C43D22680AFF001E0EAC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E478C44022680AFF001E0EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E478C44222680B00001E0EAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E478C44522680B00001E0EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E478C44722680B00001E0EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E478C44822680B00001E0EAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E478C44E22680B00001E0EAC /* WIFIDEMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WIFIDEMOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E478C45222680B00001E0EAC /* WIFIDEMOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WIFIDEMOTests.m; sourceTree = "<group>"; };
+		E478C45422680B00001E0EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E478C45922680B00001E0EAC /* WIFIDEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WIFIDEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E478C45D22680B00001E0EAC /* WIFIDEMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WIFIDEMOUITests.m; sourceTree = "<group>"; };
+		E478C45F22680B00001E0EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E478C43322680AFF001E0EAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719390CF22700B6F00AA36BC /* CloudKit.framework in Frameworks */,
+				719390D12270131900AA36BC /* NetworkExtension.framework in Frameworks */,
+				719390CD2270086E00AA36BC /* ExternalAccessory.framework in Frameworks */,
+				2490ABB8F0AC6B4421C53323 /* libPods-WIFIDEMO.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E478C44B22680B00001E0EAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3683D978E172C09514A857F4 /* libPods-WIFIDEMOTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E478C45622680B00001E0EAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6CEBBB35F5DF3F212190C1A /* libPods-WIFIDEMOUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		914667F450A30A6173BF590A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26D8A1ED1F6D2273151C1EF8 /* Pods-WIFIDEMO.debug.xcconfig */,
+				134A4EB6FA1B03FE3803D309 /* Pods-WIFIDEMO.release.xcconfig */,
+				70C66170D1C96D9333DCAE04 /* Pods-WIFIDEMOTests.debug.xcconfig */,
+				376BC4F6751D5446DAF5028F /* Pods-WIFIDEMOTests.release.xcconfig */,
+				9F6F1BF452C20A0CDB5B0F91 /* Pods-WIFIDEMOUITests.debug.xcconfig */,
+				0F8A18FC885F0E0CFA36D536 /* Pods-WIFIDEMOUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E478C42D22680AFF001E0EAC = {
+			isa = PBXGroup;
+			children = (
+				E478C43822680AFF001E0EAC /* WIFIDEMO */,
+				E478C45122680B00001E0EAC /* WIFIDEMOTests */,
+				E478C45C22680B00001E0EAC /* WIFIDEMOUITests */,
+				E478C43722680AFF001E0EAC /* Products */,
+				E478C46B22680C06001E0EAC /* Frameworks */,
+				914667F450A30A6173BF590A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E478C43722680AFF001E0EAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E478C43622680AFF001E0EAC /* WIFIDEMO.app */,
+				E478C44E22680B00001E0EAC /* WIFIDEMOTests.xctest */,
+				E478C45922680B00001E0EAC /* WIFIDEMOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E478C43822680AFF001E0EAC /* WIFIDEMO */ = {
+			isa = PBXGroup;
+			children = (
+				715524532272A249001EBC9F /* SCNetworkHeader.h */,
+				715524512272A131001EBC9F /* WiFiProxy.h */,
+				715524502272A130001EBC9F /* WiFiProxy.m */,
+				717683F7226881C200F86D84 /* WIFIDEMO.entitlements */,
+				E478C43922680AFF001E0EAC /* AppDelegate.h */,
+				E478C43A22680AFF001E0EAC /* AppDelegate.m */,
+				E478C43C22680AFF001E0EAC /* ViewController.h */,
+				E478C43D22680AFF001E0EAC /* ViewController.m */,
+				E478C43F22680AFF001E0EAC /* Main.storyboard */,
+				E478C44222680B00001E0EAC /* Assets.xcassets */,
+				E478C44422680B00001E0EAC /* LaunchScreen.storyboard */,
+				E478C44722680B00001E0EAC /* Info.plist */,
+				E478C44822680B00001E0EAC /* main.m */,
+			);
+			path = WIFIDEMO;
+			sourceTree = "<group>";
+		};
+		E478C45122680B00001E0EAC /* WIFIDEMOTests */ = {
+			isa = PBXGroup;
+			children = (
+				E478C45222680B00001E0EAC /* WIFIDEMOTests.m */,
+				E478C45422680B00001E0EAC /* Info.plist */,
+			);
+			path = WIFIDEMOTests;
+			sourceTree = "<group>";
+		};
+		E478C45C22680B00001E0EAC /* WIFIDEMOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E478C45D22680B00001E0EAC /* WIFIDEMOUITests.m */,
+				E478C45F22680B00001E0EAC /* Info.plist */,
+			);
+			path = WIFIDEMOUITests;
+			sourceTree = "<group>";
+		};
+		E478C46B22680C06001E0EAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				719390D02270131900AA36BC /* NetworkExtension.framework */,
+				719390CE22700B6F00AA36BC /* CloudKit.framework */,
+				719390CC2270086E00AA36BC /* ExternalAccessory.framework */,
+				9D105BB4A90E49C4A0425964 /* libPods-WIFIDEMO.a */,
+				D247B27DBA7F45735DD7F101 /* libPods-WIFIDEMOTests.a */,
+				BF64DEF69816D86E5DD75B41 /* libPods-WIFIDEMOUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E478C43522680AFF001E0EAC /* WIFIDEMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E478C46222680B00001E0EAC /* Build configuration list for PBXNativeTarget "WIFIDEMO" */;
+			buildPhases = (
+				8F405D21C3696C4BE4EC4AC9 /* [CP] Check Pods Manifest.lock */,
+				E478C43222680AFF001E0EAC /* Sources */,
+				E478C43322680AFF001E0EAC /* Frameworks */,
+				E478C43422680AFF001E0EAC /* Resources */,
+				30ECC128F57F1F77BECFD76A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WIFIDEMO;
+			productName = WIFIDEMO;
+			productReference = E478C43622680AFF001E0EAC /* WIFIDEMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E478C44D22680B00001E0EAC /* WIFIDEMOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E478C46522680B00001E0EAC /* Build configuration list for PBXNativeTarget "WIFIDEMOTests" */;
+			buildPhases = (
+				ADBB8E7245830A5E0443C3DF /* [CP] Check Pods Manifest.lock */,
+				E478C44A22680B00001E0EAC /* Sources */,
+				E478C44B22680B00001E0EAC /* Frameworks */,
+				E478C44C22680B00001E0EAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E478C45022680B00001E0EAC /* PBXTargetDependency */,
+			);
+			name = WIFIDEMOTests;
+			productName = WIFIDEMOTests;
+			productReference = E478C44E22680B00001E0EAC /* WIFIDEMOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E478C45822680B00001E0EAC /* WIFIDEMOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E478C46822680B00001E0EAC /* Build configuration list for PBXNativeTarget "WIFIDEMOUITests" */;
+			buildPhases = (
+				F7D6E504DD79DBA50E7A825E /* [CP] Check Pods Manifest.lock */,
+				E478C45522680B00001E0EAC /* Sources */,
+				E478C45622680B00001E0EAC /* Frameworks */,
+				E478C45722680B00001E0EAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E478C45B22680B00001E0EAC /* PBXTargetDependency */,
+			);
+			name = WIFIDEMOUITests;
+			productName = WIFIDEMOUITests;
+			productReference = E478C45922680B00001E0EAC /* WIFIDEMOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E478C42E22680AFF001E0EAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = sunlei;
+				TargetAttributes = {
+					E478C43522680AFF001E0EAC = {
+						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.HotspotConfiguration = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					E478C44D22680B00001E0EAC = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = E478C43522680AFF001E0EAC;
+					};
+					E478C45822680B00001E0EAC = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = E478C43522680AFF001E0EAC;
+					};
+				};
+			};
+			buildConfigurationList = E478C43122680AFF001E0EAC /* Build configuration list for PBXProject "WIFIDEMO" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E478C42D22680AFF001E0EAC;
+			productRefGroup = E478C43722680AFF001E0EAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E478C43522680AFF001E0EAC /* WIFIDEMO */,
+				E478C44D22680B00001E0EAC /* WIFIDEMOTests */,
+				E478C45822680B00001E0EAC /* WIFIDEMOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E478C43422680AFF001E0EAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E478C44622680B00001E0EAC /* LaunchScreen.storyboard in Resources */,
+				E478C44322680B00001E0EAC /* Assets.xcassets in Resources */,
+				E478C44122680AFF001E0EAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E478C44C22680B00001E0EAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E478C45722680B00001E0EAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30ECC128F57F1F77BECFD76A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WIFIDEMO/Pods-WIFIDEMO-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WIFIDEMO/Pods-WIFIDEMO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F405D21C3696C4BE4EC4AC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WIFIDEMO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADBB8E7245830A5E0443C3DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WIFIDEMOTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7D6E504DD79DBA50E7A825E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WIFIDEMOUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E478C43222680AFF001E0EAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E478C43E22680AFF001E0EAC /* ViewController.m in Sources */,
+				E478C44922680B00001E0EAC /* main.m in Sources */,
+				E478C43B22680AFF001E0EAC /* AppDelegate.m in Sources */,
+				715524522272A131001EBC9F /* WiFiProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E478C44A22680B00001E0EAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E478C45322680B00001E0EAC /* WIFIDEMOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E478C45522680B00001E0EAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E478C45E22680B00001E0EAC /* WIFIDEMOUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E478C45022680B00001E0EAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E478C43522680AFF001E0EAC /* WIFIDEMO */;
+			targetProxy = E478C44F22680B00001E0EAC /* PBXContainerItemProxy */;
+		};
+		E478C45B22680B00001E0EAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E478C43522680AFF001E0EAC /* WIFIDEMO */;
+			targetProxy = E478C45A22680B00001E0EAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E478C43F22680AFF001E0EAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E478C44022680AFF001E0EAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E478C44422680B00001E0EAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E478C44522680B00001E0EAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E478C46022680B00001E0EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E478C46122680B00001E0EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E478C46322680B00001E0EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26D8A1ED1F6D2273151C1EF8 /* Pods-WIFIDEMO.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WIFIDEMO/WIFIDEMO.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB6UCKYRB5;
+				INFOPLIST_FILE = WIFIDEMO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.richfit.wifi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E478C46422680B00001E0EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 134A4EB6FA1B03FE3803D309 /* Pods-WIFIDEMO.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WIFIDEMO/WIFIDEMO.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB6UCKYRB5;
+				INFOPLIST_FILE = WIFIDEMO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.richfit.wifi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E478C46622680B00001E0EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70C66170D1C96D9333DCAE04 /* Pods-WIFIDEMOTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WIFIDEMOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = richfit.com.WIFIDEMOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WIFIDEMO.app/WIFIDEMO";
+			};
+			name = Debug;
+		};
+		E478C46722680B00001E0EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 376BC4F6751D5446DAF5028F /* Pods-WIFIDEMOTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WIFIDEMOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = richfit.com.WIFIDEMOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WIFIDEMO.app/WIFIDEMO";
+			};
+			name = Release;
+		};
+		E478C46922680B00001E0EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F6F1BF452C20A0CDB5B0F91 /* Pods-WIFIDEMOUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WIFIDEMOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = richfit.com.WIFIDEMOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WIFIDEMO;
+			};
+			name = Debug;
+		};
+		E478C46A22680B00001E0EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F8A18FC885F0E0CFA36D536 /* Pods-WIFIDEMOUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WIFIDEMOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = richfit.com.WIFIDEMOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WIFIDEMO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E478C43122680AFF001E0EAC /* Build configuration list for PBXProject "WIFIDEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E478C46022680B00001E0EAC /* Debug */,
+				E478C46122680B00001E0EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E478C46222680B00001E0EAC /* Build configuration list for PBXNativeTarget "WIFIDEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E478C46322680B00001E0EAC /* Debug */,
+				E478C46422680B00001E0EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E478C46522680B00001E0EAC /* Build configuration list for PBXNativeTarget "WIFIDEMOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E478C46622680B00001E0EAC /* Debug */,
+				E478C46722680B00001E0EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E478C46822680B00001E0EAC /* Build configuration list for PBXNativeTarget "WIFIDEMOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E478C46922680B00001E0EAC /* Debug */,
+				E478C46A22680B00001E0EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E478C42E22680AFF001E0EAC /* Project object */;
+}
